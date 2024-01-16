@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rubik:wght@300&display=swap');
+
+header {
+    height: 300px;
+    background-color: #F0FFF0;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+}
+
+.sobre {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    background-image: url('https://associacaocasazul.org.br/qds3/wp-content/uploads/2022/08/Quem-Somos-Associacao-Casazul.jpg');
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.sobre__conteudo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h2, p {
+    width: 30%;
+    margin: 10px 25px;
+}
+
+.botao {
+    margin: 20px;
+    background-color: #0000FF;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botao {
+    width: 35%;
+}
+
+.projetos {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    background-image: url('https://associacaocasazul.org.br/qds3/wp-content/uploads/2023/03/O-Projeto-Bonecar-Associacao-Casazul.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.projetos p, h2, a {
+    width: 30%;
+    margin: 10px 25px;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B0E0E6;
+}
