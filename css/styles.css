@@ -22,15 +22,21 @@ header {
     justify-content: center;
 }
 
-header nav {
+.menu {
     margin: 30px 0;
+    display: flex;
+    gap: 0 30px;
 }
 
-header nav a {
+.navegacao {
     text-decoration: none;
     color: #000000;
     font-size: 22px;
     font-family: 'Merriweather', serif;
+}
+
+.navegacao:hover {
+    color: #0000FF;
 }
 
 p {
@@ -47,22 +53,19 @@ h2 {
     height: 700px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
     margin: 50px 0;
-    background-image: url('https://associacaocasazul.org.br/qds3/wp-content/uploads/2022/08/Quem-Somos-Associacao-Casazul.jpg');
-    background-repeat: no-repeat;
-    background-position: right;  
+}
+
+.sobre__imagem {
+    width: 50%;
 }
 
 .sobre__conteudo {
-    width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-.sobre h2, p {
-    width: 30%;
-    margin: 10px 25px;
-}
 
 .botao {
     margin: 20px;
@@ -88,16 +91,24 @@ h2 {
 .projetos {
     height: 700px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
     margin: 50px 0;
-    background-image: url('https://associacaocasazul.org.br/qds3/wp-content/uploads/2023/03/O-Projeto-Bonecar-Associacao-Casazul.jpg');
+
+    /*background-image: url('https://associacaocasazul.org.br/qds3/wp-content/uploads/2023/03/O-Projeto-Bonecar-Associacao-Casazul.jpg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right;*/
 }
 
-.projetos p, h2, a {
-    width: 30%;
-    margin: 10px 25px;
+.projetos__conteudo {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    gap: 5px 0;
+}
+
+.projetos__imagem {
+    width: 60%;
 }
 
 footer {
@@ -106,4 +117,47 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #B0E0E6;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 15vh 0;
+    }
+
+    .logo {
+        width: 70vw;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao {
+        font-size: 1.7rem;
+        width: auto;
+    }
+
+    .sobre, .projetos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre__conteudo, .projetos__conteudo {
+        align-items: center;
+        gap: 10px 0;
+    }
+
+    .botao {
+        width: 60%;
+    }
+
+    .sobre__imagem, .projetos__imagem {
+        width: 100%;
+    }
+
+    .projetos {
+        height: 100%;
+    }
 }
